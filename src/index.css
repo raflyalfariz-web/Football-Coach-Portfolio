@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-accent: #00FF41;
+  --color-dark: #0A0A0A;
+  --color-pitch: #151515;
+}
+
+body {
+  @apply bg-dark text-zinc-100 overflow-hidden;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-zinc-900;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-full;
+}
+
+.dots-bg {
+  background-image: radial-gradient(circle at 2px 2px, #ffffff10 1px, transparent 0);
+  background-size: 24px 24px;
+}
